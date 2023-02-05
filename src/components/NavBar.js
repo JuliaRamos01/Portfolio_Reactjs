@@ -11,10 +11,15 @@ export const NavBar = () =>{
             } else{
                 seScrolled(false);
             }
-        } /* parei aqui */
+        } 
+
+        window.addEventListener("scroll", onScroll);
+
+        return () => window.removeEventListener("scroll", onScroll);
     }, []}
+
     return(
-        <Navbar expand="lg">
+        <Navbar expand="lg" className = {scrolled ? "scrolled": ""}> {/* parei aqui */}
     <Container>
         <Navbar.Brand href="#home">
             <img src={''} alt="Logo" />
