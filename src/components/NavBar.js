@@ -9,7 +9,7 @@ import navIcon3 from '../assets/img/nav-icon3.svg'
 export const NavBar = () =>{
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, seScrolled] = useState(false);
-    useEffect {() => {
+    useEffect (() => {
         const onScroll = () =>{
             if(window.scrollY > 50){
                 seScrolled(true);
@@ -21,7 +21,7 @@ export const NavBar = () =>{
         window.addEventListener("scroll", onScroll);
 
         return () => window.removeEventListener("scroll", onScroll);
-    }, []} /* ver o motivo do erro */
+    }, [])
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
