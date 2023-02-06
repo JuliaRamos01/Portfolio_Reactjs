@@ -1,5 +1,5 @@
 import { useState, useEffect} from "react";
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/logo.svg'
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/nav-icon2.svg'
@@ -21,7 +21,7 @@ export const NavBar = () =>{
         window.addEventListener("scroll", onScroll);
 
         return () => window.removeEventListener("scroll", onScroll);
-    }, []}
+    }, []} /* ver o motivo do erro */
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
