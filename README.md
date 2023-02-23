@@ -1,7 +1,7 @@
 # Website - Portifólio
 
 <h1 align="center">
-  <img src="../src/assets/img/screenwebsite.png">
+  <img src="./src/assets/img/screenwebsite.png">
 </h1>
 
 ## Infos
